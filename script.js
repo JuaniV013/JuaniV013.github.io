@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
   
       setTimeout(function() {
         // Redirecciona a la página de producción
-        background.style.background = 'url("Mordiscologo.png") no-repeat top center #efeff1';
+        background.style.background = 'url("Mordiscologo.png") no-repeat top center #202325';
         window.location.href = produccionLink.href;
       }, 3000); // Espera 1 segundo antes de redireccionar (ajusta el tiempo según sea necesario)
     });
   
     setTimeout(function() {
-      background.style.background = 'url("Mordiscologo.png") no-repeat center center #efeff1';
+      background.style.background = 'url("Mordiscologo.png") no-repeat center center #202325';
       loader.style.display = 'none';
       nav.style.display = 'block';
     }, 5000);

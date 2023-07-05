@@ -18,38 +18,6 @@ $(document).ready(function() {
     // Inicializa la API de Google Sheets
     gapi.load('client', initGoogleSheetsAPI);
 });
-    
-$(window).on('load', function() {
-        $('#Codigo').on('input', function() {
-          var code = $(this).val();
-          searchCode(code);
-        });
-      });
 
   
-// Función para buscar el código en la hoja de cálculo
-function searchCode(code) {
-    gapi.client.sheets.spreadsheets.values.get({
-        spreadsheetId: SPREADSHEET_ID,
-        range: 'Sheet1!A:A',
-        majorDimension: 'COLUMNS',
-    }).then(function(response) {
-        const data = response.result.values;
-        if (data && data.length > 0) {
-            const column = data[0];
-            const index = column.indexOf(code);
-            if (index !== -1) {
-                $('#Codigo').addClass('valid');
-                $('#Codigo').next('span').css('color', 'green');
-            } else {
-                $('#Codigo').removeClass('valid');
-                $('#Codigo').next('span').css('color', '');
-            }
-        } else {
-            $('#Codigo').removeClass('valid');
-            $('#Codigo').next('span').css('color', '');
-        }
-    }).catch(function(error) {
-        console.error('Error searching code:', error);
-    });
-}
+
