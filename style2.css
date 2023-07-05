@@ -12,6 +12,19 @@ html, body {
     font-weight: normal;
     font-style: normal;
   }
+    
+    @media (max-width: 768px) {
+      /* Estilos para pantallas más pequeñas, como smartphones */
+    }
+    
+    @media (min-width: 769px) and (max-width: 1024px) {
+      /* Estilos para pantallas medianas, como tablets */
+    }
+    
+    @media (min-width: 1025px) {
+      /* Estilos para pantallas más grandes, como escritorios */
+    }
+
 
   .back {
     position: fixed;
