@@ -7,15 +7,14 @@
     }
 
     .croissant {
-      width: 200px;
-      height: 200px;
-      background-image: url("Mi proyecto (2).png");
+      width: 100px;
+      height: 100px;
+      background-image: url("croissant1.gif");
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
-      left: 850px;
-      bottom: 450px;
-      animation: bite 2s infinite;
+      left: 800px;
+      bottom: 350px;
       transform-origin: center bottom;
     }
 
