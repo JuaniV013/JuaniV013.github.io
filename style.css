@@ -23,8 +23,6 @@ body {
       background-position: center center;
       background-color: #202325;
       position: fixed;
-      transform: translate(-50%, -50%);
-      transform-origin: center center;
       animation: eat 2s infinite;
       z-index: 5000; /* Ajusta el valor si es necesario */
     }
