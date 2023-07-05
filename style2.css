@@ -3,8 +3,15 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Oswald", sans-serif;
+    font-family: "Kuroneko", sans-serif;
   }  
+  
+  @font-face {
+    font-family: 'Kuroneko';
+    src: url('Kuroneko DEMO.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
   .back {
     position: fixed;
@@ -124,7 +131,7 @@ html, body {
     font-weight: 600;
   }
   
-  .form label .input.valid + span {
+  .form label .input:valid + span {
     color: green;
   }
   
