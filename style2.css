@@ -111,7 +111,7 @@ html, body {
   }
   
   .form label .input + span {
-    position: absolute;
+    position: top;
     left: 10px;
     top: 15px;
     color: grey;
