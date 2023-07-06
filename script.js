@@ -29,10 +29,3 @@ document.addEventListener('DOMContentLoaded', function() {
       nav.style.display = 'block';
     }, 5000);
   });
-  
-  window.addEventListener('unload', function() {
-    // Detener la animación del croissant
-    var croissant = document.querySelector('.croissant');
-    croissant.style.animationPlayState = 'paused';
-  });
-
