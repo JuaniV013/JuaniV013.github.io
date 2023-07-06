@@ -35,5 +35,4 @@ document.addEventListener('DOMContentLoaded', function() {
     var croissant = document.querySelector('.croissant');
     croissant.style.animationPlayState = 'paused';
   });
-  
 
